@@ -15,7 +15,10 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'fptbb', // Usually your GitHub org/user name.
   projectName: 'FpMine', // Usually your repo name.
-
+  i18n: {
+    defaultLocale: 'pt-BR',
+    locales: ['pt-BR'],
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -23,6 +26,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
