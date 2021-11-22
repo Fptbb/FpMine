@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfp_mine=self.webpackChunkfp_mine||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Ol\xe1 Mundo","permalink":"/blog/ola-mundo"}]}')}}]);
