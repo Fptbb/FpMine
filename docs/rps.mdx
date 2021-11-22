@@ -5,7 +5,7 @@ title: Terrenos
 
 import Video from '../src/components/Video.js'
 
-O Servidor utiliza o plugin "RedProtect" para proteção de terrenos, com um limite de até `2,000` terrenos. Você pode criar um terreno de até `1,000,000` blocos.
+O Servidor utiliza o plugin "RedProtect" para proteção de terrenos, com um limite de até `2,000` terrenos. Você pode proteger até `1,000,000` blocos, e a proteção conta todo os blocos do céu a bedrock.
 
 Mas para isto, é preciso criar um "RP", que é basicamente o terreno.
 
@@ -22,12 +22,17 @@ Aqui vai um exemplo da criação de um terreno:
 Alguns comandos podem ser utilizados para editar seu terreno, como por exemplo:
 
 - `/rp info` = Mostra informações sobre o terreno que você está.
-- `/rp flag` = Permite que você configure algumas atitudes do jogo dentro da sua região, bem como o que um jogador sem permissões pode ou não fazer.
-- `/rp welcome` = Permite que você adicione uma mensagem para quando um player entrar na sua região.
+- `/rp flag` = Permite que você configure algumas atitudes do jogo dentro da sua região, bem como o que um jogador sem permissões pode ou não fazer na mesma.
+- `/rp welcome <mensagem>` = Permite que você adicione uma mensagem para quando um player entrar na sua região.
 - `/rp tp <area> [mundo]` = Permite que você teleporte para uma de suas regiões, o ultimo parametro é o mundo em que sua região está, você pode utilizar os mundos `world`, `world_the_end` e `world_nether`.
 - `/rp aa <player>` = Promove um player dentro da sua região, para ele se tornar um Administrador dessa região!
 - `/rp al <player>` = Semelhante ao comando `/rp aa`, porém o player se torna um Líder.
 - `/rp am <player>` = Semlehante aos comandos `/rp aa` e `/rp al`, porém o player se torna um Membro.
-- `/rp del <area>` = Deleta uma area.
+- `/rp deletar <area>` = Deleta uma area.
 
-Caso você queira saber mais sobre outros comandos, utilize `/rp help`!
+Caso você queira saber mais sobre outros comandos, utilize `/rp ajuda`!
+
+## Considerações
+
+Caso proteja algum lugar com a intenção de bloquear outra pessoa de qualquer forma, sua proteção pode ser removida por um administrador, e punições podem ser tomadas.
+Caso você seja a pessoa que está sendo limitada por uma região de outro jogador, entre em contato com um administrador.
