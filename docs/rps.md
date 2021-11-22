@@ -10,7 +10,7 @@ Mas para isto, é preciso criar um "RP", que é basicamente o terreno.
 
 ## Criando um RP
 
-Para criar um RP é simples, crie um retangulo com cercas, e então, em uma das cercas, coloque uma placa, então na primeira linha da placa digite `[RP]`, já ná segunda, coloque o nome do seu terreno. Caso você queira verificar algumas informações sobre seu terreno, utilize o comando `/rp info`.
+Para criar um RP é simples, crie um retangulo com cercas, e então, em uma das cercas, coloque uma placa, na primeira linha da placa digite `[RP]`, já ná segunda, coloque o nome do seu terreno. Caso você queira verificar algumas informações sobre seu terreno, utilize o comando `/rp info`.
 
 Aqui vai um exemplo da criação de um terreno:
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/aobsR6tGHkc" title="Criando um terreno!" frameborder="0" allowfullscreen></iframe></center>
