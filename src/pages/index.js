@@ -1,40 +1,44 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
+import React from 'react'
+import clsx from 'clsx'
+import Layout from '@theme/Layout'
+import Link from '@docusaurus/Link'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import styles from './index.module.css'
+import HomepageFeatures from '../components/HomepageFeatures'
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">Ip: <code>m.fpt.icu</code></p>
+      <div className='container text-white'>
+        <h1 className='hero__title'>{siteConfig.title}</h1>
+        <p className='hero__subtitle'>
+          IP: <code>m.fpt.icu</code>
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
-            to="https://fpt.icu/discordMine">
+            className='button button--secondary button--lg'
+            to='https://fpt.icu/discordMine'
+          >
             Entre no Discord
           </Link>
         </div>
       </div>
     </header>
-  );
+  )
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
       title={`Pagina Inicial`}
-      description="Tutoriais e Documentação do servidor.">
+      description='Tutoriais e Documentação do servidor.'
+    >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
     </Layout>
-  );
+  )
 }
