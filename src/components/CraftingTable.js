@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './MinecraftCraftingTable.module.css'
+import styles from './CraftingTable.module.css'
 function Item(id) {
   if (!id || id === '') {
     return (
