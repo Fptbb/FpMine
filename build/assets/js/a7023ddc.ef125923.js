@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfp_mine=self.webpackChunkfp_mine||[]).push([[713],{3457:function(i){i.exports=JSON.parse('{"/blog/tags/inicio":{"allTagsPath":"/blog/tags","slug":"/blog/tags/inicio","name":"inicio","count":1,"permalink":"/blog/tags/inicio"}}')}}]);
