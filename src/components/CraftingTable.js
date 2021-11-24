@@ -7,6 +7,8 @@ const matches = [
   { index: 'name', pattern: 'name:"(.+)"' },
   { match: 'height' },
   { match: 'width' },
+  { index: 'enchantment', pattern: 'enchanted_book<"(.+)">' },
+  { match: 'id' },
 ]
 
 const heights = {
@@ -34,14 +36,22 @@ class Item extends Component {
   constructor(props) {
     super(props)
 
-    const id = props.id
+    const defaultId = props.id
 
     matches.map(
       ({ pattern, match, index }) =>
         (this[index || match] = new RegExp(pattern || `${match}:(\\S+)`, 'g')
-          .exec(id)
+          .exec(defaultId)
           ?.splice(1, 1))
     )
+
+    const id = String(this.id || defaultId)
+    this.id = id
+
+    if (this.enchantment && !this.img) {
+      this.img = `https://rawcdn.githack.com/FptbbSystems/MinecraftItensData/9317e8539606a2a598e59329edce1d26d3db67bc/i/enchanted_book.png`
+      this.name = `Enchanted Book with ${this.enchantment}`
+    }
 
     this.img =
       this.img ||
@@ -58,7 +68,7 @@ class Item extends Component {
   }
 
   componentDidMount() {
-    const { id } = this.props
+    const { id } = this
 
     if (this.name) {
       this.setState({ name: this.name })
@@ -85,13 +95,12 @@ class Item extends Component {
       setPosition,
 
       // Properties
-      id,
       column,
       index,
       amount,
     } = this.props
 
-    const { head, type } = this
+    const { id, type } = this
 
     return id && id.length > 0 ? (
       <div
