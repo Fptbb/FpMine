@@ -13,3 +13,5 @@ Caso Tenha alguma ideia ou tenha criado alguma Farm nova, chame o Fp e peça-o p
 Para utilizar os warps, use o comando `/warps` para ver uma lista de todos e o comando `/warp <Nome do Warp>` para teleportar-se.
 
 O comando `/home bed` te leva unicamente para o seu local de Spawn, já que ao morrer é levado para o Spawn do servidor.
+
+O Comando `/spawn` te leva para o Spawn do servidor.
