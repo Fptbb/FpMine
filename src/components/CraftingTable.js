@@ -182,3 +182,33 @@ export default class CraftingTable extends Component {
     )
   }
 }
+
+/* 
+---
+sidebar_position: 99
+title: Temporario
+---
+
+import CraftingTable from "../src/components/CraftingTable.js";
+
+<CraftingTable
+  Items={[
+    ["ender_pearl", "gold_ingot", "ender_pearl"],
+    ["iron_ingot", "nether_star", "iron_ingot"],
+    ["ender_pearl", "gold_ingot", "ender_pearl"],
+  ]}
+  Output="8x dragon_head"
+/>
+<center>
+  <CraftingTable
+    Items={[
+      ["", "gold_ingot", ""],
+      ["diamond", "gold_ingot", "diamond"],
+      ["", "iron_ingot", ""],
+    ]}
+    Output="5x diamond"
+  />
+</center>
+-- Crafting de Itens Aleatorios
+
+*/
