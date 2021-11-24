@@ -1,10 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styles from './CraftingTable.module.css'
 
-const CDN =
-  'https://rawcdn.githack.com/FptbbSystems/MinecraftItensData/9317e8539606a2a598e59329edce1d26d3db67bc/i/'
-
-const Tooltip = ({ id, hovering, position }) => {
+const Tooltip = ({ position, hovering, info: { name } }) => {
   return (
     <div
       className={styles.tooltip}
@@ -14,86 +11,151 @@ const Tooltip = ({ id, hovering, position }) => {
         visibility: hovering ? 'visible' : 'hidden',
       }}
     >
-      {id
-        .toLowerCase()
-        .split('_')
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ')}
+      {name}
     </div>
   )
 }
 
-const Item = ({ setHovering, setId, id, amount, column, index }) => {
-  return id && id.length > 0 ? (
-    <div
-      className={styles.gridElement}
-      style={{
-        left: `${2 + 34 * index + 2 * (index - 1)}px`,
-        top: `${2 + 34 * column + 2 * (column - 1)}px`,
-      }}
-      onMouseEnter={() => setHovering(true) || setId(id)}
-      onMouseLeave={() => setHovering(false) || setId(id)}
-    >
-      <p className={styles.amount}>{amount}</p>
+class Item extends Component {
+  constructor(props) {
+    super(props)
 
-      <img
-        width={'32px'}
-        height={'32px'}
-        src={`${CDN}/${id.toLowerCase()}.png`}
-      />
-    </div>
-  ) : (
-    <div key={index} />
-  )
-}
+    const headMatch = /player_head:(.+)/g.exec(props.id?.toLowerCase())
+    const head = headMatch && headMatch[1]
 
-export default ({ Items, Output }) => {
-  const [hovering, setHovering] = React.useState(false)
-  const [position, setPosition] = React.useState({ x: 0, y: 0 })
-  const [id, setId] = React.useState('')
+    this.head = head
 
-  React.useEffect(() => {
-    const handleMouseMove = ({ clientX, clientY }) =>
-      setPosition({ x: clientX, y: clientY })
+    this.state = {
+      name: 'Loading...',
+    }
+  }
 
-    document.addEventListener('mousemove', handleMouseMove)
-    return () => document.removeEventListener('mousemove', handleMouseMove)
-  }, [])
+  componentDidMount() {
+    const { id } = this.props
 
-  const outputAmount = /(\d+)x /g.exec(Output)
+    if (this.head) {
+      fetch(`https://crafthead.net/profile/${id.split(':').pop()}`)
+        .then((result) => result.json())
+        .then(({ name }) => this.setState({ name }))
+    } else {
+      this.setState({
+        name: id
+          .toLowerCase()
+          .split('_')
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' '),
+      })
+    }
+  }
 
-  return (
-    <div className={styles.crafting}>
-      {/* Tooltip */}
-      <Tooltip id={id} hovering={hovering} position={position} />
+  render() {
+    const {
+      // State Setters
+      setInfo,
+      setHovering,
+      setPosition,
 
-      {/* Elements */}
-      <div className={styles.container}>
-        <Item
-          setHovering={setHovering}
-          setId={setId}
-          id={Output.replace(/\d+x /g, () => '')}
-          amount={outputAmount && parseInt(outputAmount[1])}
-          column={1}
-          index={5.225}
-          key={10}
+      // Properties
+      id,
+      column,
+      index,
+      amount,
+    } = this.props
+
+    const { head, type } = this
+
+    return id && id.length > 0 ? (
+      <div
+        className={styles.gridElement}
+        style={{
+          left: `${2 + 34 * index + 2 * (index - 1)}px`,
+          top: `${2 + 34 * column + 2 * (column - 1)}px`,
+        }}
+        onMouseMove={({ clientX, clientY }) =>
+          setPosition({ x: clientX, y: clientY })
+        }
+        onMouseEnter={() => {
+          setInfo({ id, type, name: this.state.name })
+          setHovering(true)
+        }}
+        onMouseLeave={() => setHovering(false)}
+      >
+        <p className={styles.amount}>{amount > 0 ? amount : ''}</p>
+
+        <img
+          className={styles.center}
+          width={head ? '23px' : '32px'}
+          height={head ? '23px' : '32px'}
+          src={
+            head
+              ? `https://mc-heads.net/head/${head}/32`
+              : `https://rawcdn.githack.com/FptbbSystems/MinecraftItensData/9317e8539606a2a598e59329edce1d26d3db67bc/i/${id.toLowerCase()}.png`
+          }
         />
-
-        {Items.map((list, column) =>
-          list.map((id, index) => (
-            <Item
-              setHovering={setHovering}
-              setId={setId}
-              id={id}
-              column={column}
-              index={index}
-              key={index}
-            />
-          ))
-        )}
       </div>
-    </div>
-  )
+    ) : (
+      <div key={index} />
+    )
+  }
+}
+
+export default class CraftingTable extends Component {
+  constructor(props) {
+    super(props)
+
+    const { Output } = props
+
+    this.Output = /(\d+)x /g.exec(Output)
+    this.OutputId = Output.replace(/\d+x /g, '')
+
+    this.state = {
+      position: { x: 0, y: 0 },
+      hovering: false,
+      info: {
+        name: undefined,
+        id: undefined,
+      },
+    }
+  }
+
+  render() {
+    const { position, hovering, info } = this.state
+
+    return (
+      <div className={styles.crafting}>
+        {/* Tooltip */}
+        <Tooltip position={position} hovering={hovering} info={info} />
+
+        {/* Elements */}
+        <div className={styles.container}>
+          <Item
+            id={this.OutputId}
+            amount={parseInt(this.Output && this.Output[1])}
+            column={1}
+            index={5.225}
+            key={10}
+            setPosition={(position) => this.setState({ position })}
+            setHovering={(hovering) => this.setState({ hovering })}
+            setInfo={(info) => this.setState({ info: info })}
+          />
+
+          {this.props.Items.map((list, column) =>
+            list.map((id, index) => (
+              <Item
+                id={id}
+                column={column}
+                index={index}
+                key={index}
+                setPosition={(position) => this.setState({ position })}
+                setHovering={(hovering) => this.setState({ hovering })}
+                setInfo={(info) => this.setState({ info: info })}
+              />
+            ))
+          )}
+        </div>
+      </div>
+    )
+  }
 }
 
 /* 
