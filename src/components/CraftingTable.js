@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
 import styles from './CraftingTable.module.css'
 
+const matches = [
+  { match: 'player_head', index: 'head' },
+  { match: 'img' },
+  { index: 'name', pattern: 'name:"(.+)"' },
+  { match: 'height' },
+  { match: 'width' },
+]
+
+const heights = {
+  chest: '28px',
+}
+
+const widths = { ...heights }
+
 const Tooltip = ({ position, hovering, info: { name } }) => {
   return (
     <div
@@ -20,10 +34,23 @@ class Item extends Component {
   constructor(props) {
     super(props)
 
-    const headMatch = /player_head:(.+)/g.exec(props.id?.toLowerCase())
-    const head = headMatch && headMatch[1]
+    const id = props.id
 
-    this.head = head
+    matches.map(
+      ({ pattern, match, index }) =>
+        (this[index || match] = new RegExp(pattern || `${match}:(\\S+)`, 'g')
+          .exec(id)
+          ?.splice(1, 1))
+    )
+
+    this.img =
+      this.img ||
+      (this.head
+        ? `https://mc-heads.net/head/${this.head}/32`
+        : `https://rawcdn.githack.com/FptbbSystems/MinecraftItensData/9317e8539606a2a598e59329edce1d26d3db67bc/i/${id.toLowerCase()}.png`)
+
+    this.height = this.height || heights[id] || (this.head ? '23px' : '32px')
+    this.width = this.width || widths[id] || (this.head ? '23px' : '32px')
 
     this.state = {
       name: 'Loading...',
@@ -33,7 +60,9 @@ class Item extends Component {
   componentDidMount() {
     const { id } = this.props
 
-    if (this.head) {
+    if (this.name) {
+      this.setState({ name: this.name })
+    } else if (this.head) {
       fetch(`https://crafthead.net/profile/${id.split(':').pop()}`)
         .then((result) => result.json())
         .then(({ name }) => this.setState({ name }))
@@ -84,13 +113,9 @@ class Item extends Component {
 
         <img
           className={styles.center}
-          width={head ? '23px' : '32px'}
-          height={head ? '23px' : '32px'}
-          src={
-            head
-              ? `https://mc-heads.net/head/${head}/32`
-              : `https://rawcdn.githack.com/FptbbSystems/MinecraftItensData/9317e8539606a2a598e59329edce1d26d3db67bc/i/${id.toLowerCase()}.png`
-          }
+          width={this.width}
+          height={this.height}
+          src={this.img}
         />
       </div>
     ) : (
@@ -106,7 +131,7 @@ export default class CraftingTable extends Component {
     const { Output } = props
 
     this.Output = /(\d+)x /g.exec(Output)
-    this.OutputId = Output.replace(/\d+x /g, '')
+    this.OutputId = Output?.replace(/\d+x /g, '')
 
     this.state = {
       position: { x: 0, y: 0 },
