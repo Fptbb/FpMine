@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Autenticação
 ---
 
-O Servidor utiliza o plugin "AuthMe Reloaded" para garantir a segurança das contas, cada jogador pode ter até 2 contas no servidor, porém é preciso verificar-se no Discord em cada uma delas com uma conta diferente.
+O Servidor utiliza o plugin "[AuthMeReloaded](https://www.spigotmc.org/resources/authmereloaded.6269/)" para garantir a segurança das contas, cada jogador pode ter até 2 contas no servidor, porém é preciso verificar-se no Discord em cada uma delas com uma conta diferente.
 
 Nessa página iremos explicar como registrar-se, logar e comandos uteis do processo.
 
