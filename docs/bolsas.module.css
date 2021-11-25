@@ -1,0 +1,10 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 966px) {
+  .buttons {
+    display: contents;
+  }
+}
