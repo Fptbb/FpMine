@@ -1,0 +1,105 @@
+---
+sidebar_position: 7
+title: Bolsas
+---
+
+import CraftingTable from "../src/components/CraftingTable.js";
+
+export const backpack = (tier) => `
+img:https://cdn.discordapp.com/attachments/683216649171763208/913075609117274182/d94e6a0cdc4d42f7a83aad96cac42932.png
+height:24px
+width:24px
+name:"Bolsa ${tier}"
+`;
+
+O Servidor utiliza o plugin "[MinePacks](https://www.spigotmc.org/resources/minepacks-backpack-plugin-mc-1-7-1-17.19286/)" para criação de Bolsas, elas são itens customizados com a criação extremamente complexa, que servem como um inventario permanente e móvel.
+
+Os itens utilizados são baseados em níveis, cada um representando uma parte do jogo.
+
+## Comandos Uteis
+
+- `/backpack` - Abre sua Backpack sem precisar de um item.
+
+## Crafting
+
+Cada tier adiciona uma linha na bolsa, por fim se tornando um baú duplo. Lembrando que o item de resultado é apenas fictício e não pode ser aberto, mas após a sua criação, o comando `/backpack` é liberado.
+
+### Bolsa Tier 1
+
+<CraftingTable
+  Items={[
+    ["dirt", "sand", "podzol"],
+    ["gold_block", "chest", "iron_block"],
+    ["copper_block", "coal_block", "oxidized_copper_block"],
+  ]}
+  Output={backpack(1)}
+/>
+
+### Bolsa Tier 2
+
+<CraftingTable
+  Items={[
+    ["emerald_block", "diamond_block", "amethyst_shard"],
+    ["scute", "heart_of_the_sea", "iron_block"],
+    ["ender_pearl", "writable_book", `honey_bottle`],
+  ]}
+  Output={backpack(2)}
+/>
+
+### Bolsa Tier 3
+
+<CraftingTable
+  Items={[
+    [
+      `
+img:http://www.needcoolshoes.com/banner/thumbnail.png?=paau
+name:"Banner"`,
+      `
+img:http://www.needcoolshoes.com/banner/thumbnail.png?=paao
+name:"Banner"`,
+      `
+img:http://www.needcoolshoes.com/banner/thumbnail.png?=paak
+name:"Banner"`,
+    ],
+    ["redstone_block", "experience_bottle", "tnt"],
+    ["totem_of_undying", "spyglass", "trident"],
+  ]}
+  Output={backpack(3)}
+/>
+
+### Bolsa Tier 4
+
+<CraftingTable
+  Items={[
+    ["blaze_rod", "ghast_tear", "magma_cream"],
+    ["golden_axe", "wither_skeleton_skull", "golden_leggings"],
+    ["netherite_pickaxe", "golden_apple", "netherite_chestplate"],
+  ]}
+  Output={backpack(4)}
+/>
+
+### Bolsa Tier 5
+
+<CraftingTable
+  Items={[
+    [
+      'enchanted_book<"Unbreaking III">',
+      "brewing_stand",
+      'enchanted_book<"Mending">',
+    ],
+    ["end_crystal", "beacon", `id:ender_chest width:24px height:24px`],
+    ["crossbow", "ender_eye", "end_stone"],
+  ]}
+  Output={backpack(5)}
+/>
+
+### Bolsa Tier 6
+
+<CraftingTable
+  Items={[
+    ["dragon_breath", "elytra", "beacon"],
+    ["dragon_head", "dragon_egg", `id:ender_chest width:24px height:24px`],
+    ["beacon", "shulker_box", "dragon_breath"],
+  ]}
+  Output={backpack(6)}
+/>
