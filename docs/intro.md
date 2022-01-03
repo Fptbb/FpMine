@@ -15,3 +15,4 @@ Caso queira o convite para o servidor do discord em jogo, use o comando `/discor
 - Fptbb: Eu, porque sim.
 - Hasted: Ajuda com esse site e as documentações.
 - P3: Criou o Spawn e não terminou as Farms.
+- Rafa: Criou o logotipo e padrões de design para o servidor.
