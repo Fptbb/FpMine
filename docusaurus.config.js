@@ -52,7 +52,7 @@ const config = {
         title: 'Fp Mine',
         logo: {
           alt: 'Logo',
-          src: 'img/fp.png',
+          src: 'img/server-icon.png',
         },
         items: [
           {
