@@ -1,19 +1,14 @@
 ---
-sidebar_position: 2
-title: Autenticação
-description: Tutorial de autenticação no servidor
+sidebar_position: 1
+title: Organizar Baus
+description: Tutorial de organização de baus
 ---
 
-O Servidor utiliza o plugin "[AuthMeReloaded](https://www.spigotmc.org/resources/authmereloaded.6269/)" para garantir a segurança das contas, cada jogador pode ter até 2 contas no servidor, porém é preciso verificar-se no Discord em cada uma delas com uma conta diferente.
+O Servidor utiliza o plugin "[ChestSort](https://www.spigotmc.org/resources/chestsort-api.59773/)" para permitir organizar baus facilmente.
 
-Nessa página iremos explicar como registrar-se, logar e comandos uteis do processo.
+## Menu de Organização
 
-## Registro e Segurança
-
-Ao entrar pela primeira vez no servidor, o sistema vai te pedir para entrar no nosso servidor no Discord, que pode ser encontrado [clicando aqui](https://fpt.icu/discordMine), então entrar no privado do bot `Fp Mine#3747` e digitar um código numérico de 4 dígitos. Esse processo só acontece uma vez e garante que sua conta não seja falsa.
-Depois disso, ao entrar no servidor, cadastre uma senha para a conta usando o comando `/register <Senha> <Email/Senha>`. Marque essa senha em algum lugar, de preferência um aplicativo seguro.
-
-Para evitar perdas caso não lembre ou não tenha marcado sua senha, use o comando `/email add <Seu Email>` e adicione um email configurado a sua conta.
+Ao abrir baus pela primeira vez no servidor, uma mensagem ira aparecer no chat pedindo para usar o comando `/chestsort`, nele, existem algumas opções pra ativar e desativar formas de organizar automaticamente os baus, seja ela com um click especifico, uma combinação de teclas, ou até automaticamente ao abrir.
 
 ## Premium vs Cracked
 

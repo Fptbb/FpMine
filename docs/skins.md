@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: Skins
+description: Tutorial sobre uso de skins no servidor.
 ---
 
 # Skins

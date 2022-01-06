@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: PvP
+description: Tutorial sobre o PvP no Servidor
 ---
 
 # PvP

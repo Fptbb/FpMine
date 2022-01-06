@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: Introdução
+description: Introdução e Creditos
 ---
 
 # Introdução

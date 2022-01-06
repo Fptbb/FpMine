@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+title: Warps e TP's
+description: Tutorial sobre comandos de teleporte
 ---
 
 # Warps e TP's
