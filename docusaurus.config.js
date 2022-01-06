@@ -53,6 +53,8 @@ const config = {
         logo: {
           alt: 'Logo',
           src: 'img/icon-transparent.svg',
+          width: 50,
+          height: 50,
         },
         items: [
           {
