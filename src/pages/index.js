@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className='container text-white'>
-        <h1 className='hero__title'><img src={require('@site/static/img/icon-transparent.png').default} alt="Example banner" width={100} height={100} /><br/>{siteConfig.title}</h1>
+        <h1 className='hero__title'><img src={require('@site/static/img/icon-transparent.png').default} alt="Example banner" width={100} height={100} /><br />{siteConfig.title}</h1>
         <p className='hero__subtitle'>
           IP: <code>m.fpt.icu</code>
         </p>
@@ -24,6 +24,11 @@ function HomepageHeader() {
             Entre no Discord
           </Link>
         </div>
+        <p className='hero__subtitle'>
+          <code>É obrigatório estar no servidor do discord para jogar.</code>
+          <br />
+          <code>Ao entrar pela primeira vez, você precisara verificar-se no discord.</code>
+        </p>
       </div>
     </header>
   )
