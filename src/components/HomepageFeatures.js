@@ -5,13 +5,13 @@ import styles from './HomepageFeatures.module.css'
 const FeatureList = [
   {
     title: 'Ver os Tutoriais',
-    // Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    // Svg: require('../../static/img/icon.svg').default,
     description: <>Como sempre, leia as docs</>,
     url: '/docs/intro',
   },
   {
     title: 'Veja as ultimas atualizações',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    // Svg: require('../../static/img/icon.svg').default,
     description: <>Aqui eu mando as ultimas coisas que adicionei no servidor</>,
     url: '/blog',
   },

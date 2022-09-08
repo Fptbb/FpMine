@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon-transparent.svg',
   organizationName: 'fptbb', // Usually your GitHub org/user name.
   projectName: 'FpMine', // Usually your repo name.
   i18n: {

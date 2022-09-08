@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Minecraftia';
-  src: url('@site/static/fonts/Minecraftia-Regular.ttf');
+  font-family: "Minecraftia";
+  src: url("@site/static/fonts/Minecraftia-Regular.ttf");
 }
 
 .gridElement {
@@ -11,7 +11,7 @@
 }
 
 .crafting {
-  background: url('@site/static/img/CraftingTable.png') no-repeat;
+  background: url("@site/static/img/CraftingTable.png") no-repeat;
 
   height: 135px;
   width: 264px;

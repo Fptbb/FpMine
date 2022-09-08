@@ -5,14 +5,14 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 import HomepageFeatures from '../components/HomepageFeatures'
-import DocusaurusImageUrl from '@site/static/img/icon-transparent.svg';
+import FpMineLogo from '@site/static/img/icon-transparent.svg';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className='container text-white'>
-        <h1 className='hero__title'><img src={require('@site/static/img/icon-transparent.png').default} alt="Example banner" width={100} height={100} /><br />{siteConfig.title}</h1>
+        <h1 className='hero__title'><FpMineLogo alt="Example banner" width={100} height={100} /><br />{siteConfig.title}</h1>
         <p className='hero__subtitle'>
           IP: <code>m.fpt.icu</code>
         </p>
