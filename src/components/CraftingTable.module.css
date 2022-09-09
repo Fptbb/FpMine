@@ -1,6 +1,9 @@
 @font-face {
   font-family: "Minecraftia";
-  src: url("@site/static/fonts/Minecraftia-Regular.ttf");
+  src: url("@site/static/fonts/minecraftia-regular.woff2") format("woff2"),
+    url("@site/static/fonts/minecraftia-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .gridElement {
