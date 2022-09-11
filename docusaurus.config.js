@@ -64,6 +64,7 @@ const config = {
             label: 'Tutorial',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/regras', label: 'Regras', position: 'left' },
         ],
       },
 

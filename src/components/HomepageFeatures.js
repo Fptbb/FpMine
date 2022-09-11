@@ -4,6 +4,12 @@ import styles from './HomepageFeatures.module.css'
 
 const FeatureList = [
   {
+    title: 'Regras',
+    // Svg: require('../../static/img/icon.svg').default,
+    description: <>Leia tudo antes, afinal, não queremos acionar o ban-hammer</>,
+    url: '/regras',
+  },
+  {
     title: 'Ver os Tutoriais',
     // Svg: require('../../static/img/icon.svg').default,
     description: <>Como sempre, leia as docs</>,
@@ -19,7 +25,7 @@ const FeatureList = [
 
 function Feature({ title, description, url }) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className={clsx('col col--4')}>
       <div className='text--center padding-horiz--md'>
         <h3>
           <a href={url}>{title}</a>
