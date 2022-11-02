@@ -25,7 +25,7 @@ const FeatureList = [
 
 function Feature({ title, description, url }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4 justify-center')}>
       <div className='text--center padding-horiz--md'>
         <h3>
           <a href={url}>{title}</a>

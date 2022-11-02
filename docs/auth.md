@@ -31,3 +31,4 @@ Apos o cadastro, sempre ao entrar no servidor, faça login com o comando `/login
 - `/logout` = Desloga da sua conta.
 - `/premium` = Use o comando para avisar ao servidor que sua conta é original.
 - `/cracked` = Use o comando para avisar ao servidor que sua conta é pirata.
+- `/unlinkaccount` = Use o comando para desvincular sua conta do discord da conta atual.

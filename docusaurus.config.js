@@ -4,9 +4,13 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
+const data = {
+  title: 'FP MINE',
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Fp Mine',
+  title: data.title,
   tagline: 'Ip: m.fpt.icu',
   url: 'https://m.fpt.icu',
   baseUrl: '/',
@@ -17,7 +21,7 @@ const config = {
   projectName: 'FpMine', // Usually your repo name.
   i18n: {
     defaultLocale: 'pt-BR',
-    locales: ['pt-BR'],
+    locales: ['pt-BR', 'en'],
   },
 
   presets: [
@@ -49,7 +53,7 @@ const config = {
       },
 
       navbar: {
-        title: 'Fp Mine',
+        title: data.title,
         logo: {
           alt: 'Logo',
           src: 'img/icon-transparent.svg',

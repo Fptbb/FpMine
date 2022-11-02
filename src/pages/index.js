@@ -31,7 +31,7 @@ function HomepageHeader() {
         </p>
       </div>
     </header>
-  )
+  );
 }
 
 export default function Home() {
@@ -43,6 +43,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <iframe style={{ width: '728px', height: '90px', maxWidth: '100%', border: 'none', display: 'block', margin: 'auto' }} src="https://pt.namemc.com/server/m.fpt.icu/embed" width="728" height="90"></iframe>
       </main>
     </Layout>
   )
