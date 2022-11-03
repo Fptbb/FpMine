@@ -17,3 +17,5 @@ Para utilizar os warps, use o comando `/warps` para ver uma lista de todos e o c
 O comando `/home bed` te leva unicamente para o seu local de Spawn, já que ao morrer é levado para o Spawn do servidor.
 
 O Comando `/warp spawn` te leva para o Spawn do servidor.
+
+Entrou no servidor e está no spawn? Quer voltar para onde estava? Use o comando `/back`.

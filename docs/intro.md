@@ -12,6 +12,10 @@ Alguns comandos listados nessa documentação utilizam notação de texto para o
 
 Caso queira o convite para o servidor do discord em jogo, use o comando `/discord`
 
+# Comandos Uteis
+
+- `/wtp`, `/register`, `/back`, `/warps`, `/skins`, `/rp`, `/pvp`, `/chestsort`
+
 ### Creditos
 
 - Fptbb: Eu, porque sim.
