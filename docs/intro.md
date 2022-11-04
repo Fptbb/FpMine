@@ -16,6 +16,11 @@ Caso queira o convite para o servidor do discord em jogo, use o comando `/discor
 
 - `/wtp`, `/register`, `/back`, `/warps`, `/skins`, `/rp`, `/pvp`, `/chestsort`
 
+# Recomendações (É serio, leia.)
+
+- É recomendado não criar farms novas a menos que elas sejam essenciais e não existam no servidor (`/warps`), caso queira criar uma farm que não existe, avise o Fp no discord e ele adicionara um warp na sua farm para que todos possam usar (lembre-se de proteger o terreno e configurar direitinho). Isso evita o trabalho repetido de criar toda uma estrutura, e também o lag no servidor de ter varias farms identicas rodando ao mesmo tempo.
+- É recomendado utilizar o mundo temporario (`/wtp`) para suas explorações e minerações, e o mundo principal para construções permanentes, evite explorar infinitamente o mundo principal, ele é limitado e não é tão grande assim.
+
 ### Creditos
 
 - Fptbb: Eu, porque sim.
