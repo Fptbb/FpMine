@@ -34,6 +34,12 @@ function HomepageHeader() {
             </p>
           </blockquote>
           <h1>
+            <li>NÃO MATE RAPOSAS.</li>
+          </h1>
+          <p>
+            É serio, eu não recomendo, alem de te tornar um monstro, pode ter efeitos não esperados.
+          </p>
+          <h1>
             <li>Respeito acima de tudo.</li>
           </h1>
           <p>
