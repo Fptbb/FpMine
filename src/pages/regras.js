@@ -37,7 +37,7 @@ function HomepageHeader() {
             <li>NÃO MATE RAPOSAS.</li>
           </h1>
           <p>
-            É serio, eu não recomendo, alem de te tornar um monstro, pode ter efeitos não esperados.
+            É serio, eu não recomendo, alem de te tornar um monstro, pode ter efeitos não esperados. <a href='https://i.imgur.com/04yOWlo.png'>Não maltrate a raposa, ou a raposa maltrata você.</a>
           </p>
           <h1>
             <li>Respeito acima de tudo.</li>
