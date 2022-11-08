@@ -21,6 +21,10 @@ function HomepageHeader() {
           assim vejo qual plugin se encaixa. Caso queira doar valores menores ou diretamente, envie para o meu <a href='https://paypal.me/fptbb'>Paypal</a> ou no pix (l@fpt.icu)
           ou qualquer outro meio de pagamento que eu tenha (chamar no discord), todos os valores vão para a compra dos plugins, mas pode demorar mais porque vou esperar outras doações.
         </p>
+        <br />
+        <small>
+          Apos fazer qualquer doação, me chame no discord e avise, infelizmente não temos o poder de adivinhar quem fez o pagamento, então não vou poder dar seu beneficio se não me avisar :).
+        </small>
       </p>
       <br />
       <p>
