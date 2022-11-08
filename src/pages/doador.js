@@ -18,7 +18,7 @@ function HomepageHeader() {
           os minimo a ser doado é 50 reais, levando em conta que plugins são bem caros, mas qualquer doação menor é aceita, apenas não vai
           receber os mesmos beneficios no servidor, os plugins a serem comprados estão na minha <a href="https://polymart.org/user/8512/wishlist">lista de desejos do polymart</a>,
           alguns plugins tem prioridade, então caso queira ajudar, entre em contato comigo no discord (fptbb#8760) e fale que quer ajudar e o valor,
-          assim vejo qual plugin se encaixa. Caso queira doar valores menores ou diretamente, envie para o meu <a href='paypal.me/fptbb'>Paypal</a>,
+          assim vejo qual plugin se encaixa. Caso queira doar valores menores ou diretamente, envie para o meu <a href='https://paypal.me/fptbb'>Paypal</a>,
           todos os valores vão para a compra dos plugins, mas pode demorar mais porque vou esperar outras doações.
         </p>
       </p>
