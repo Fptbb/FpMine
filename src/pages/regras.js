@@ -10,7 +10,7 @@ function HomepageHeader() {
     <div className="container text-white">
       <br />
       <p className={styles.intro}>
-        <FpMineLogo alt="Example banner" width={100} height={100} />
+        <FpMineLogo alt="Site Logo" width={100} height={100} />
         <h1 className="hero__title center">{siteConfig.title} - Regras</h1>
         <p className="hero__subtitle">
           Aqui estão listadas as regras do servidor, leia tudo antes de entrar.
@@ -162,8 +162,8 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Pagina Inicial`}
-      description='Tutoriais e Documentação do servidor.'
+      title={`Regras`}
+      description='Regras do servidor.'
     >
       <main>
         <HomepageHeader />

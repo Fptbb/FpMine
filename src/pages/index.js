@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className='container text-white'>
-        <h1 className='hero__title'><FpMineLogo alt="Example banner" width={100} height={100} /><br />{siteConfig.title}</h1>
+        <h1 className='hero__title'><FpMineLogo alt="Site Logo" width={100} height={100} /><br />{siteConfig.title}</h1>
         <p className='hero__subtitle'>
           IP: <code>m.fpt.icu</code>
         </p>
