@@ -15,11 +15,11 @@ function HomepageHeader() {
         <p className="hero__subtitle">
           Agora é possivel se tornar um doador no servidor, com alguns beneficios e permissões, e ainda ajudar a pagar os plugins do servidor
           (sim, eu fp, não fico com nada do valor doado, a compra é feita no momento da doação ou logo depois), caso queira fazer uma doação,
-          os minimo a ser doado é 50 reais, levando em conta que plugins são bem caros, mas qualquer doação menor é aceita, apenas não vai
+          o minimo a ser doado é 50 reais, levando em conta que plugins são bem caros, mas qualquer doação menor é aceita, apenas não vai
           receber os mesmos beneficios no servidor, os plugins a serem comprados estão na minha <a href="https://polymart.org/user/8512/wishlist">lista de desejos do polymart</a>,
           alguns plugins tem prioridade, então caso queira ajudar, entre em contato comigo no discord (fptbb#8760) e fale que quer ajudar e o valor,
-          assim vejo qual plugin se encaixa. Caso queira doar valores menores ou diretamente, envie para o meu <a href='https://paypal.me/fptbb'>Paypal</a>,
-          todos os valores vão para a compra dos plugins, mas pode demorar mais porque vou esperar outras doações.
+          assim vejo qual plugin se encaixa. Caso queira doar valores menores ou diretamente, envie para o meu <a href='https://paypal.me/fptbb'>Paypal</a> ou no pix (l@fpt.icu)
+          ou qualquer outro meio de pagamento que eu tenha (chamar no discord), todos os valores vão para a compra dos plugins, mas pode demorar mais porque vou esperar outras doações.
         </p>
       </p>
       <br />
