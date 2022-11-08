@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <Layout
       title={`Pagina Inicial`}
-      description='Tutoriais e Documentação do servidor.'
+      description='Foxes Rule The World.'
     >
       <HomepageHeader />
       <main>

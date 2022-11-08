@@ -69,6 +69,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/regras', label: 'Regras', position: 'left' },
+          { to: '/doador', label: 'VIRE UM DOADOR', position: 'left' },
         ],
       },
 
