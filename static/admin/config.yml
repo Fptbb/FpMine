@@ -27,3 +27,15 @@ collections:
       - label: "Authors"
         name: "authors"
         widget: "string"
+  - name: docs
+    label: "docs"
+    folder: docs
+    identifier_field: title
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: body, label: Body, widget: markdown }
+      - { name: sidebar_position, label: SidebarPosition, widget: number }
