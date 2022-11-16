@@ -21,7 +21,7 @@ const config = {
   projectName: 'FpMine', // Usually your repo name.
   i18n: {
     defaultLocale: 'pt-BR',
-    locales: ['pt-BR', 'en'],
+    locales: ['pt-BR'],
   },
 
   presets: [
