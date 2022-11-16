@@ -2,7 +2,7 @@ backend:
   name: github
   branch: main
   repo: Fptbb/FpMine
-  site_domain: optimistic-varahamihira-edaf78.netlify.app
+  site_domain: subtle-taffy-eb7a06.netlify.app
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
