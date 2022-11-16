@@ -30,6 +30,9 @@ collections:
   - name: docs
     label: "docs"
     folder: docs
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: "{{title}}"
     identifier_field: title
     extension: md
     widget: "list"
