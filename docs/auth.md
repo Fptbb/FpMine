@@ -13,7 +13,9 @@ Nessa página iremos explicar como registrar-se, logar e comandos uteis do proce
 Ao entrar pela primeira vez no servidor, o sistema vai te pedir para entrar no nosso servidor no Discord, que pode ser encontrado [clicando aqui](https://fpt.icu/discordMine), então entrar no privado do bot `Fp Mine#3747` e digitar um código numérico de 4 dígitos. Esse processo só acontece uma vez e garante que sua conta não seja falsa.
 Depois disso, ao entrar no servidor, cadastre uma senha para a conta usando o comando `/register <Senha> <Email/Senha>`. Marque essa senha em algum lugar, de preferência um aplicativo seguro.
 
+:::tip Dica
 Para evitar perdas caso não lembre ou não tenha marcado sua senha, use o comando `/email add <Seu Email>` e adicione um email configurado a sua conta.
+:::
 
 ## Premium vs Cracked
 

@@ -8,7 +8,9 @@ description: Tutorial sobre comandos de teleporte
 
 No servidor, além dos teleportes pra cama usando `/home bed` e dos teleportes pra RP's citados anteriormente, existem alguns outros teleportes pra locais públicos no servidor. Tais como Farms, Dimensões já exploradas por outros, e locais importantes, para que todos possam usar e não precisem fazer outra.
 
-Caso Tenha alguma ideia ou tenha criado alguma Farm nova, chame o Fp e peça-o para criar um warp para o local. Todas as Farms publicas devem ter acesso público a Baus.
+:::note Nota
+Caso Tenha alguma ideia ou tenha criado alguma Farm nova, chame o Fp e peça-o para criar um warp para o local. Todas as Farms publicas devem ter acesso público a Baus. Farms duplicadas ou que causem lag no servidor podem ser resetadas ou removidas sem aviso previo conforme as regras do servidor.
+:::
 
 ## Como utilizar
 
