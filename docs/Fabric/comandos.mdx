@@ -6,52 +6,48 @@ description: Tutorial inicial para comandos no servidor fabric
 
 ## Casas
 
-/home set [nome do lugar]
+
+### /home set [nome do lugar]
 - Você salvará um lugar para teleportar, mas apenas você consegue utilizar.
 
-/home set [nome do lugar] override 
+### /home set [nome do lugar] override 
 - Você muda o local salvo.
 
-/home tp [nome do lugar]
+### /home tp [nome do lugar]
 Você vai ser teleportado para destino salvo. 
 
-/home list
+### /home list
 Mostra todos os lugares salvos.
 
-/Home unset [nome do lugar]
+### /Home unset [nome do lugar]
 Exclui o lugar salvo.
 
 ## Terrenos
 
 
-Criando seu terreno para que pessoas com má influencia não tente te roubar ou explodir sua casa 🙂
+### /enclosure select pos_1 [x y z] ou [\~ \~ \~]
+### /enclosure select pos_2 [x y z] ou [\~ \~ \~]
+### /enclosure create [nome do lugar]
+Cria seu terreno para que pessoas com má influencia não tente te roubar ou explodir sua casa 🙂
 
-/enclosure select pos_1 [x y z] ou [\~ \~ \~]
-/enclosure select pos_2 [x y z] ou [\~ \~ \~]
-/enclosure create [nome do lugar]
+### /enclosure create [nome do lugar]
+### /enclosure tp [nome do lugar]
+Cria um teleporte para que todos possam usar
 
-
-Criando um teleporte para que todos possam usar
-
-/enclosure create [nome do lugar]
-/enclosure tp [nome do lugar]
-
+### /enclosure remove [nome do lugar]
 Caso queira apagar depois!
-/enclosure remove [nome do lugar]
 
+### /enclosure set [nome do lugar] user [nome do player] all true
+Compartilhar sua casa com outra pessoa
 
-Como compartilhar sua casa com outra pessoa?
-
-/enclosure set [nome do lugar] user [nome do player] all true
-
-e como remove a pessoa depois? 8)
-
-/enclosure set [nome do lugar] user [nome do player] all none
+### /enclosure set [nome do lugar] user [nome do player] all none
+Remove a pessoa
 
 ## Skins
 
-Como usar outra skin
 
-/skin set mojang [nome do player]
-ou por link 
-/skin set web classic [link]
+### /skin set mojang [nome do player]
+Usa a skin de outro player
+
+### /skin set web classic [link]
+Usa uma skin por link png
